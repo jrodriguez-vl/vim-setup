@@ -21,6 +21,12 @@ vim.opt.backup = false
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
+--fix bg colors
+vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+vim.api.nvim_set_hl(0, "ctermbg", { bg = "none" })
+vim.api.nvim_set_hl(0, "pmenu", { bg = "none" })
+
 vim.opt.termguicolors = true
 
 vim.opt.scrolloff = 10
